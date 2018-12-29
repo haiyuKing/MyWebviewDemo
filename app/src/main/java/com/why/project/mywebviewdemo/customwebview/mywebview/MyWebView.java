@@ -95,8 +95,8 @@ public class MyWebView extends WebView {
 				.getPath());
 		
 		// 设置缓存模式【我们可以在有网的情况下将缓存模式改为websetting.setCacheMode(WebSettings.LOAD_DEFAULT);当没有网络时则设置为 LOAD_CACHE_ELSE_NETWORK】
-		//webSettings.setCacheMode(WebSettings.LOAD_NO_CACHE);// 设置不使用缓存
-		webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);//第一次加载之后便在本地缓存，如果没网络就加载缓存，
+		webSettings.setCacheMode(WebSettings.LOAD_NO_CACHE);// 设置不使用缓存
+		//webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);//第一次加载之后便在本地缓存，如果没网络就加载缓存，
 
 		webSettings.setBlockNetworkImage(false);//WebView是否下载图片资源，默认为true。【此处需要为false。否则图片不展现】
 		
